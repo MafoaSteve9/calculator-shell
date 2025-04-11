@@ -22,5 +22,20 @@ while true; do
       result=$((a * b))
       echo "Le résultat de la multiplication est : $result"
       ;;
+
+    4)
+     read -p "Donne moi un premier nombre : " a
+     read -p "Donne moi un second nombre : " b
+     result=$((a / b))
+     echo "Le résultat de la divsion est : $result"
+     ;;
+
+    5)
+     echo "quitter"
+      break
+      ;;
+    *)
+     echo "Choix invalide"
+     ;;
   esac
 done
